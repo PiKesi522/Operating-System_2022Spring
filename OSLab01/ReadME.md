@@ -91,21 +91,6 @@
       - 使用sign将bin/bootblock.out文件转化为512字节的bin/bootblock文件，并将其最后两字节设置为0x55AA
       - 为bin/ucore.img分配5000MB的内存空间，并将bootblock放在img文件的第一个block，接着将kernel复制到ucore.img第二个block开始的位置
 
-   .
-
-   .
-
-   .
-
-   .
-
-   .
-
-   .
-
-   .
-
-   .
 
 2. **一个被系统认为是符合规范的硬盘主引导扇区的特征是什么?**
 
@@ -127,7 +112,6 @@
 
    在 sign.c 中，分配了一个具有512个字节长度的内存空间，并且在内存空间的最后两个字节分别为 0x55 和 0xAA 作为结束。
 
-   
 
 
 
@@ -148,9 +132,6 @@
 
    ![image-20220309204852590](C:\Users\86008\AppData\Roaming\Typora\typora-user-images\image-20220309204852590.png)
 
-   .
-
-   .
 
 2. 在初始化位置0x7C00设置实地址断点,测试断点正常。
 
@@ -177,13 +158,7 @@
 
    <center><h5>bootblock.asm的代码</h5></center>
 
-   .
 
-   .
-
-   .
-
-   .
 
 4. 自己找一个bootloader或内核中的代码位置﹐设置断点并进行测试。
 
